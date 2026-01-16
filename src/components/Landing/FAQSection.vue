@@ -33,19 +33,19 @@ const toggle = (index: number) => {
 
 <template>
   <section class="max-w-3xl mx-auto px-6 mb-24">
-    <h2 class="text-3xl font-black text-text-primary mb-8 text-left">Frequently Asked Questions</h2>
+    <h2 class="text-3xl font-black text-text-primary mb-8 text-left dark:text-white">Frequently Asked Questions</h2>
     <div class="space-y-4">
       <div
         v-for="(faq, index) in faqs"
         :key="index"
-        class="bg-surface rounded-xl border border-border/20 overflow-hidden transition-all duration-300 hover:border-primary/30"
-        :class="{ 'shadow-lg shadow-primary/10': openIndex === index }"
+        class="bg-surface rounded-xl border border-border overflow-hidden transition-all duration-300 hover:border-primary"
+        :class="{ 'shadow-md': openIndex === index }"
       >
         <button
           @click="toggle(index)"
           class="w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none group"
         >
-          <span class="font-bold text-text-primary text-lg pr-4">{{ faq.question }}</span>
+          <span class="font-bold text-text-primary text-lg pr-4 dark:text-white">{{ faq.question }}</span>
           <span
             class="material-symbols-outlined text-text-muted transition-transform duration-300 group-hover:text-primary"
             :class="{ 'rotate-180 text-primary': openIndex === index }"
@@ -58,7 +58,7 @@ const toggle = (index: number) => {
           :class="openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
         >
           <div class="overflow-hidden">
-            <p class="px-6 pb-6 text-text-muted leading-relaxed">
+            <p class="px-6 pb-6 text-text-muted leading-relaxed dark:text-slate-400">
               {{ faq.answer }}
             </p>
           </div>

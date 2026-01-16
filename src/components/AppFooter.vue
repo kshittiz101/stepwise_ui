@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <footer class="bg-surface border-t border-border py-16 text-sm dark:bg-surface-alt dark:border-border">
+  <footer class="bg-header-dark border-t border-border py-16 text-sm">
     <div class="max-w-[1248px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
         <div class="lg:col-span-2">

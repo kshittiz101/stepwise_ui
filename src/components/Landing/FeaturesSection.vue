@@ -12,7 +12,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">psychology</span>
         </div>
@@ -27,7 +27,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">history_edu</span>
         </div>
@@ -42,7 +42,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">quiz</span>
         </div>
@@ -57,7 +57,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">monitoring</span>
         </div>
@@ -72,7 +72,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">language</span>
         </div>
@@ -87,7 +87,7 @@
         class="p-8 rounded-2xl bg-surface border border-border hover:border-primary hover:shadow-md transition-all duration-300 group cursor-default"
       >
         <div
-          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
+          class="w-14 h-14 rounded-xl bg-icon-bg-light flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-all duration-300"
         >
           <span class="material-symbols-outlined text-2xl">leaderboard</span>
         </div>

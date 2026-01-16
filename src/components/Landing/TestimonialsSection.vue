@@ -3,23 +3,23 @@ import TestimonialCard from '@/components/common/TestimonialCard.vue'
 </script>
 
 <template>
-  <section class="mb-24 bg-gradient-to-br from-primary/5 via-surface to-accent/5 rounded-3xl py-16 px-6 md:px-12 border border-border/10">
+  <section class="mb-24 bg-surface rounded-3xl py-16 px-6 md:px-12 border border-border">
     <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
       <div class="text-left">
         <span class="text-primary text-sm font-bold uppercase tracking-widest">Real Results</span>
-        <h2 class="text-3xl font-black mt-2">Results &amp; Success Stories</h2>
+        <h2 class="text-3xl font-black mt-2 text-text-primary dark:text-white">Results &amp; Success Stories</h2>
         <p class="text-text-muted mt-2">
           Hear from students across Nepal who aced their exams with StepWise.
         </p>
       </div>
       <div class="flex gap-2">
         <button
-          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-muted hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
+          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-secondary hover:bg-primary hover:text-white transition-all duration-300"
         >
           <span class="material-symbols-outlined">chevron_left</span>
         </button>
         <button
-          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-muted hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
+          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-secondary hover:bg-primary hover:text-white transition-all duration-300"
         >
           <span class="material-symbols-outlined">chevron_right</span>
         </button>

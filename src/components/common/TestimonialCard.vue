@@ -14,16 +14,16 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <div
-    class="bg-surface p-8 rounded-2xl shadow-sm border border-border/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
+    class="bg-surface p-8 rounded-2xl shadow-sm border border-border hover:border-primary hover:shadow-md transition-all duration-300 h-full flex flex-col"
   >
     <div class="flex items-center gap-4 mb-6">
       <div
-        class="size-14 rounded-full bg-center bg-cover border-2 border-primary/10 shrink-0"
+        class="size-14 rounded-full bg-center bg-cover border-2 border-border shrink-0"
         :style="{ backgroundImage: `url('${image}')` }"
         :aria-label="`Portrait of ${name}`"
       ></div>
       <div>
-        <h4 class="font-bold text-lg text-text-primary">{{ name }}</h4>
+        <h4 class="font-bold text-lg text-text-primary dark:text-white">{{ name }}</h4>
         <p class="text-xs text-text-muted uppercase font-semibold">{{ role }}</p>
       </div>
     </div>

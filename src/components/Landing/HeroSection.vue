@@ -79,7 +79,7 @@ const goals = [
         </div>
 
         <div class="absolute -bottom-6 -left-6 bg-surface p-5 rounded-2xl shadow-xl flex items-center gap-4 border border-border backdrop-blur-sm max-w-xs animate-float-delayed">
-          <div class="size-14 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+          <div class="size-14 rounded-full bg-icon-bg-light flex items-center justify-center text-accent dark:bg-icon-bg-dark">
             <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1">check_circle</span>
           </div>
           <div>
@@ -104,7 +104,7 @@ const goals = [
         <div :class="['size-14 rounded-xl flex items-center justify-center mb-6', goal.color]">
           <span class="material-symbols-outlined text-2xl">{{ goal.icon }}</span>
         </div>
-        <h3 class="text-xl font-bold text-text-primary mb-3">{{ goal.title }}</h3>
+        <h3 class="text-xl font-bold text-text-primary mb-3 dark:text-white">{{ goal.title }}</h3>
         <p class="text-text-muted text-sm leading-relaxed mb-6">
           {{ goal.description }}
         </p>

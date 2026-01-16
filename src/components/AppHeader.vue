@@ -32,7 +32,7 @@ const toggleTheme = () => {
 
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-border transition-all duration-300 dark:bg-surface dark:border-border"
+    class="fixed top-0 left-0 right-0 z-50 bg-header-dark border-b border-border transition-all duration-300"
   >
     <div class="max-w-[1248px] mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">

@@ -22,6 +22,9 @@ export default {
         'text-muted': 'var(--color-text-muted)',
         'text-inverse': 'var(--color-text-inverse)',
         'navy-custom': 'var(--color-navy-custom)',
+        'header-dark': '#1a1a2e',
+        'icon-bg-light': '#eff6ff',
+        'icon-bg-dark': '#2e2e42',
 
         // Primary Brand Colors
         primary: {
