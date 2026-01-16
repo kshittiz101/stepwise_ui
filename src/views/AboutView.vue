@@ -18,7 +18,7 @@
               <span class="material-symbols-outlined text-2xl">school</span>
             </div>
             <h2 class="mb-2 text-xl font-bold text-text-primary dark:text-white">Our Mission</h2>
-            <p class="text-text-secondary leading-relaxed">
+            <p class="text-text-secondary leading-relaxed dark:text-slate-400">
               To provide world-class educational resources and mentorship to students across Nepal, making quality education accessible to everyone.
             </p>
           </div>
