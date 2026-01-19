@@ -1,42 +1,39 @@
 <script setup lang="ts">
-interface Props {
-  name: string
-  role: string
-  image: string
-  rating?: number
+interface TestimonialCardProps {
   quote: string
+  name: string
+  title: string
+  avatar: string
+  alt: string
 }
 
-withDefaults(defineProps<Props>(), {
-  rating: 5,
-})
+const props = defineProps<TestimonialCardProps>()
 </script>
 
 <template>
   <div
-    class="bg-surface p-8 rounded-2xl shadow-sm border border-border hover:border-primary hover:shadow-md transition-all duration-300 h-full flex flex-col"
+    class="flex h-full flex-col gap-6 rounded-3xl bg-white p-10 shadow-lg transition-all hover:shadow-xl dark:bg-white/5"
   >
-    <div class="flex items-center gap-4 mb-6">
+    <div class="flex gap-1 text-primary">
+      <span class="material-symbols-outlined">star</span>
+      <span class="material-symbols-outlined">star</span>
+      <span class="material-symbols-outlined">star</span>
+      <span class="material-symbols-outlined">star</span>
+      <span class="material-symbols-outlined">star</span>
+    </div>
+    <p class="flex-1 text-lg italic leading-relaxed text-gray-700 dark:text-gray-300">
+      "{{ props.quote }}"
+    </p>
+    <div class="flex items-center gap-4 border-t border-gray-100 pt-6 dark:border-white/10">
       <div
-        class="size-14 rounded-full bg-center bg-cover border-2 border-border shrink-0"
-        :style="{ backgroundImage: `url('${image}')` }"
-        :aria-label="`Portrait of ${name}`"
+        class="size-12 rounded-full bg-cover bg-center"
+        :style="{ backgroundImage: `url('${props.avatar}')` }"
+        :aria-label="props.alt"
       ></div>
       <div>
-        <h4 class="font-bold text-lg text-text-primary dark:text-white">{{ name }}</h4>
-        <p class="text-xs text-text-muted uppercase font-semibold">{{ role }}</p>
+        <p class="font-bold text-navy-custom dark:text-white">{{ props.name }}</p>
+        <p class="text-sm text-gray-500">{{ props.title }}</p>
       </div>
     </div>
-    <div class="flex gap-1 mb-4 text-amber-500">
-      <span
-        v-for="i in 5"
-        :key="i"
-        class="material-symbols-outlined fill-[1] text-xl"
-        :class="{ 'text-text-muted': i > rating }"
-      >
-        star
-      </span>
-    </div>
-    <p class="text-base text-text-secondary leading-relaxed italic flex-grow">"{{ quote }}"</p>
   </div>
 </template>

@@ -1,49 +1,75 @@
 <script setup lang="ts">
 import TestimonialCard from '@/components/common/TestimonialCard.vue'
+
+type Testimonial = {
+  id: number
+  rating: number
+  quote: string
+  name: string
+  title: string
+  avatar: string
+  alt: string
+}
+
+const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    rating: 5,
+    quote:
+      '"StepWise was a game-changer for my Lok Sewa prep. The GK modules are so well-organized compared to heavy books. I finally cleared my Section Officer exams this year!"',
+    name: 'Anup Sharma',
+    title: 'Section Officer, Gov of Nepal',
+    avatar:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuB6JBYSGVrY6y4QxE9Xkf-vHOota-cNRzaZVpT0Waf7PclxV-JWfj9froamfHR3I6gn91HfqoEvC7FenZa8fM1vZPPkEfyYvIsl6C1VKZJA1MTLjVyC5jKUk_fsQPKQvEqSM-kFXorUgnbbw4vkTV7GOJ8beFrU6-rpA8qW2fSAhGlS8VdFSeosexRAN6gGSMG6YW-EAcl7L09evVM7LDRR1d2eZEBXcZcY3dGBqqnwosDSZOFWQcchDwnEWntn6OyusQcVyV3NrW2p',
+    alt: 'Profile photo of a young Nepali man',
+  },
+  {
+    id: 2,
+    rating: 5,
+    quote:
+      '"The Medical Entrance course here is fantastic. The daily mock tests felt exactly like the real CEE. The biological diagrams and explanations were very easy to follow."',
+    name: 'Priya Adhikari',
+    title: 'MOE Scholarship Recipient, IOM',
+    avatar:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuB6MIn0SQb8xiFhuqJ_-KxnpPyvBxlG_iisdd9C3KObDouimg9UDVkYQmobCdMQcWJqMj5FHDfy9fwkRLtA-XgOwYeufXMXWuGSqvPbguTcGzP5d7puxJBcbGkNNLDPJ-kt7kHMGF125mgc-fBjf4v4QR589wx4ldcY8xfAxmIWUdxbeUrotyCCQU1Gnj1c_0_8mbx8OIQPnfU6oRhMAHD9Z-8maJB2_1axj8YEsc3BjbH0eBOnk4Ov_D4zeGX-yVA262joOQwzx7Xg',
+    alt: 'Profile photo of a young Nepali woman',
+  },
+  {
+    id: 3,
+    rating: 5,
+    quote:
+      '"I used StepWise for my +2 Science revision and it saved me so much time. The quizzes after each chapter showed me exactly where I was weak, and my final results improved a lot!"',
+    name: 'Suman Karki',
+    title: '+2 Science Student, Kathmandu',
+    avatar:
+      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=256&q=80',
+    alt: 'Profile photo of a young Nepali student',
+  },
+]
 </script>
 
 <template>
-  <section class="mb-24 bg-surface rounded-3xl py-16 px-6 md:px-12 border border-border">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-      <div class="text-left">
-        <span class="text-primary text-sm font-bold uppercase tracking-widest">Real Results</span>
-        <h2 class="text-3xl font-black mt-2 text-text-primary dark:text-white">Results &amp; Success Stories</h2>
-        <p class="text-text-muted mt-2">
-          Hear from students across Nepal who aced their exams with StepWise.
+  <section class="py-24 px-6 lg:px-40 lg:py-32">
+    <div class="mx-auto max-w-[1200px]">
+      <div class="mb-16 flex flex-col items-center text-center">
+        <h2 class="text-3xl font-black text-navy-custom dark:text-white md:text-4xl">
+          Student Success Stories
+        </h2>
+        <p class="mt-4 text-gray-500">
+          Real stories from students across Nepal who reached their goals with StepWise.
         </p>
       </div>
-      <div class="flex gap-2">
-        <button
-          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-secondary hover:bg-primary hover:text-white transition-all duration-300"
-        >
-          <span class="material-symbols-outlined">chevron_left</span>
-        </button>
-        <button
-          class="w-10 h-10 rounded-xl border-2 border-border hover:border-primary flex items-center justify-center text-text-secondary hover:bg-primary hover:text-white transition-all duration-300"
-        >
-          <span class="material-symbols-outlined">chevron_right</span>
-        </button>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div v-for="testimonial in testimonials" :key="testimonial.id">
+          <TestimonialCard
+            :quote="testimonial.quote"
+            :name="testimonial.name"
+            :title="testimonial.title"
+            :avatar="testimonial.avatar"
+            :alt="testimonial.alt"
+          />
+        </div>
       </div>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <TestimonialCard
-        name="Suman"
-        role="Engineering Aspirant"
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuCrrnnTMPv9LWf_3HmcP7spsnTcdmebgqYJYd58MyKoHwnXmuZ3kI0sRhyCpVzWPYxm705AMnaaN1mHvlDglHFMma7-5uGN4tzQjxNNHlDF8fzCGd4sv0999KV6L3bXl814CkT3jRoYPMUMsTTXpmuMf6VhSzn-DVIluG4xZVcgLE3MUQ8_c4BISWMCvSKDHwTbf7P9TkvbKYdtloL_0RoYFadeVcy77Nif84adg0O0Y9E1NN5Q_CoD2-bmn3LUhMEMMxV0IUwD2dNk"
-        quote="StepWise helped me crack my engineering entrance with ease. The AI plans are a game changer! It organized my chaos into a clear daily goal."
-      />
-      <TestimonialCard
-        name="Anjali"
-        role="NEB Grade 12"
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuBtMMyPK-zEWG31LbKz53Xt9J0EeNSap-ZTl26JD4zvR6vgSO9xv7EbS5DgC5qZ4wtCy-NmGbGXz0yGxMu3SaeAfxgBtjmGTU6zHc7yQ6pDEQrpa7erN9PB8EqKNn7T-IWnSmggmAmzOQ0LOOOM5_XlqRt0CiqGvqlvStPHOD7YHFcV158xEUlInp_GZAMX_YX61tmJ1gyXx-nVya4RjgBGP-l4nlIn58MTf4g__8NlXZktOCvyQvazs81G3xOQxUAKWCLUCGauythV"
-        quote="I love the daily MCQs. They kept me consistent throughout my NEB preparation. The breakdown of complex Physics concepts was exactly what I needed."
-      />
-      <TestimonialCard
-        name="Ram"
-        role="SEE Graduate"
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuDjugEgzmz6L5Gsfj6Z5bRxK36soZ7y5uBD10L1PXaoC7TPda9PwDjRb7LJZ0JPEgTL68Xq4nSVbaVvbkBxoEjNKcY3H_hUmzUZxkvbYKyt4PDeAziJ0APi8irQY-sEcwdLkgfMKNirQYBkXeGHL4qHk27NqD4FDxlFVAmZKfwOf_WASKQ6dGxXRfDfESFrSby5WWXPJokG9vcpu1OHRIfY2D6RIczhRbUUGzsw1G21BuOUqSZGPgNihlkav9oa1za0_Tobkva696wi"
-        quote="The previous year questions are so well organized. It's the best platform for Nepali students. I improved my GPA by 0.5 points using their mock tests."
-      />
     </div>
   </section>
 </template>

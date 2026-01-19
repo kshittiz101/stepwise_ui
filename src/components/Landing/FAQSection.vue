@@ -33,7 +33,9 @@ const toggle = (index: number) => {
 
 <template>
   <section class="max-w-3xl mx-auto px-6 mb-24">
-    <h2 class="text-3xl font-black text-text-primary mb-8 text-left dark:text-white">Frequently Asked Questions</h2>
+    <h2 class="text-3xl font-black text-text-primary mb-8 text-left dark:text-white">
+      Frequently Asked Questions
+    </h2>
     <div class="space-y-4">
       <div
         v-for="(faq, index) in faqs"
@@ -45,7 +47,9 @@ const toggle = (index: number) => {
           @click="toggle(index)"
           class="w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none group"
         >
-          <span class="font-bold text-text-primary text-lg pr-4 dark:text-white">{{ faq.question }}</span>
+          <span class="font-bold text-text-primary text-lg pr-4 dark:text-white">{{
+            faq.question
+          }}</span>
           <span
             class="material-symbols-outlined text-text-muted transition-transform duration-300 group-hover:text-primary"
             :class="{ 'rotate-180 text-primary': openIndex === index }"
