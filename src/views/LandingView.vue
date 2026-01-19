@@ -3,7 +3,7 @@ import HeroSection from '@/components/Landing/HeroSection.vue'
 import FeaturesSection from '@/components/Landing/FeaturesSection.vue'
 import WhyChoose from '@/components/Landing/WhyChoose.vue'
 import TestimonialsSection from '@/components/Landing/TestimonialsSection.vue'
-import FaqSection from '@/components/Landing/FaqSection.vue'
+import FaqSection from '@/components/Landing/FAQSection.vue'
 import CallToAction from '@/components/Landing/CallToAction.vue'
 </script>
 

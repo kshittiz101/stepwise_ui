@@ -32,37 +32,55 @@ const toggle = (index: number) => {
 </script>
 
 <template>
-  <section class="max-w-3xl mx-auto px-6 mb-24">
-    <h2 class="text-3xl font-black text-text-primary mb-8 text-left dark:text-white">
-      Frequently Asked Questions
-    </h2>
-    <div class="space-y-4">
+  <section class="mx-auto mb-24 max-w-7xl px-6">
+    <div class="mb-16 text-center">
+      <h2 class="mb-4 text-3xl font-black text-secondary dark:text-white md:text-4xl">
+        Frequently Asked Questions
+      </h2>
+      <p class="mx-auto max-w-2xl text-lg text-gray-500">
+        Everything you need to know about StepWise, our mission, and how we help you succeed.
+      </p>
+    </div>
+
+    <div class="mx-auto max-w-7xl space-y-4">
       <div
         v-for="(faq, index) in faqs"
         :key="index"
-        class="bg-surface rounded-xl border border-border overflow-hidden transition-all duration-300 hover:border-primary"
-        :class="{ 'shadow-md': openIndex === index }"
+        class="overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:bg-white/5"
+        :class="{ 'ring-2 ring-primary/5': openIndex === index }"
       >
         <button
           @click="toggle(index)"
-          class="w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none group"
+          class="flex w-full cursor-pointer items-center justify-between p-6 text-left focus:outline-none"
         >
-          <span class="font-bold text-text-primary text-lg pr-4 dark:text-white">{{
-            faq.question
-          }}</span>
           <span
-            class="material-symbols-outlined text-text-muted transition-transform duration-300 group-hover:text-primary"
-            :class="{ 'rotate-180 text-primary': openIndex === index }"
+            class="pr-8 text-lg font-bold transition-colors duration-300"
+            :class="openIndex === index ? 'text-primary' : 'text-secondary dark:text-white'"
           >
-            expand_more
+            {{ faq.question }}
           </span>
+          <div
+            class="flex size-8 shrink-0 items-center justify-center rounded-full transition-colors duration-300"
+            :class="
+              openIndex === index
+                ? 'bg-primary text-white'
+                : 'bg-gray-100 text-gray-400 dark:bg-white/10'
+            "
+          >
+            <span
+              class="material-symbols-outlined text-xl transition-transform duration-300"
+              :class="{ 'rotate-180': openIndex === index }"
+            >
+              {{ openIndex === index ? 'remove' : 'add' }}
+            </span>
+          </div>
         </button>
         <div
           class="grid transition-all duration-300 ease-in-out"
           :class="openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
         >
           <div class="overflow-hidden">
-            <p class="px-6 pb-6 text-text-muted leading-relaxed dark:text-slate-400">
+            <p class="px-6 pb-6 text-base leading-relaxed text-gray-600 dark:text-gray-300">
               {{ faq.answer }}
             </p>
           </div>
