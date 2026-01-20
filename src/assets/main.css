@@ -10,4 +10,14 @@
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  /* Base font size - smaller on mobile */
+  font-size: 12px;
+}
+
+/* Reset to default font size on larger screens */
+@media (min-width: 640px) {
+  html {
+    font-size: 16px;
+  }
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="bg-secondary py-24 text-white">
-    <div class="mx-auto max-w-[1200px] px-6 lg:px-40">
+    <div class="mx-auto max-w-8xl px-6 lg:px-40">
       <div class="flex flex-col gap-16">
         <div class="flex flex-col gap-4 text-center items-center">
           <h2 class="text-3xl font-black md:text-5xl">Why Choose StepWise?</h2>

@@ -34,7 +34,7 @@ const listOfLearningPath = [
 
 <template>
   <section class="bg-white px-6 py-16 lg:px-40">
-    <div class="mx-auto max-w-[1200px]">
+    <div class="mx-auto max-w-8xl">
       <!-- Title -->
       <h2 class="mb-12 text-center text-4xl font-black tracking-tight text-secondary">
         Choose Your Learning Path

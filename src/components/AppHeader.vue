@@ -3,7 +3,7 @@
 <template>
   <!-- Top Navigation Bar -->
   <header class="sticky top-0 z-50 w-full bg-secondary px-6 py-4 shadow-lg lg:px-40">
-    <div class="mx-auto flex max-w-[1200px] items-center justify-between">
+    <div class="mx-auto flex max-w-8xl items-center justify-between">
       <!-- Logo (Left) -->
       <div class="flex items-center gap-3 text-white">
         <div class="flex size-10 items-center justify-center rounded-full bg-primary">

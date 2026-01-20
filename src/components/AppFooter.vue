@@ -2,7 +2,7 @@
 
 <template>
   <footer class="bg-secondary border-t border-border py-16 text-sm text-white">
-    <div class="max-w-[1248px] mx-auto px-6">
+    <div class="max-w-8xl mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
         <div class="lg:col-span-2">
           <div class="flex items-center gap-3 mb-6">

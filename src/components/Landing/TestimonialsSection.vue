@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
 
 <template>
   <section class="py-24 px-6 lg:px-40 lg:py-32">
-    <div class="mx-auto max-w-[1200px]">
+    <div class="mx-auto max-w-8xl">
       <div class="mb-16 flex flex-col items-center text-center">
         <h2 class="text-3xl font-black text-navy-custom dark:text-white md:text-4xl">
           Student Success Stories
