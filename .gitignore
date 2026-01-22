@@ -36,3 +36,9 @@ coverage
 __screenshots__/
 
 vitest.config.ts
+
+.vscode/
+.docs/
+docs
+
+.env

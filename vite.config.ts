@@ -5,13 +5,13 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig(({ mode }) => {
-  // loads .env, .env.production, etc.
   const env = loadEnv(mode, process.cwd(), '')
+  const port = Number(env.VITE_PORT || 5173);
+  const target = env.VITE_API_TARGET || "http://localhost:8000";
+  const prefix = env.VITE_API_PREFIX || "/api";
 
   return {
-    // Default "/" for localhost; override in production with VITE_BASE
     base: env.VITE_BASE ?? '/',
 
     plugins: [vue(), vueDevTools(), tailwindcss()],
@@ -21,7 +21,13 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      port: 3000,
+      port: port,
+      proxy: {
+        [prefix]: {
+          target: target,
+          changeOrigin: true,
+        },
+      },
     },
   }
 })
