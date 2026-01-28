@@ -14,15 +14,16 @@
 
       <!-- Nav Links (Center) -->
       <nav class="hidden flex-1 justify-center gap-10 md:flex">
-        <a class="text-sm font-semibold text-gray-300 hover:text-white transition-colors" href="#"
-          >Study Material</a
-        >
-        <a class="text-sm font-semibold text-gray-300 hover:text-white transition-colors" href="#"
-          >Features</a
-        >
-        <a class="text-sm font-semibold text-gray-300 hover:text-white transition-colors" href="#"
-          >About</a
-        >
+
+        <!-- home -->
+
+          <router-link to="/" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Home</router-link>
+
+        <!-- about -->
+        <router-link to="/about" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">About</router-link>
+
+        <!-- categories -->
+        <router-link to="/categories" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Categories</router-link>
       </nav>
 
       <!-- Auth Buttons (Right) -->

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LearnPathCard from '@/components/common/LearnPathCard.vue'
+import LearnPathCard from '@/components/Cards/LearnPathCard.vue'
 
 const listOfLearningPath = [
   {
@@ -44,14 +44,8 @@ const listOfLearningPath = [
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Medical Entrance Card -->
         <div v-for="path in listOfLearningPath" :key="path.title">
-          <LearnPathCard
-            :title="path.title"
-            :description="path.description"
-            :icon="path.icon"
-            :links="path.links"
-            :bg-class="path.bgClass"
-            :icon-color-class="path.iconColorClass"
-          />
+          <LearnPathCard :title="path.title" :description="path.description" :icon="path.icon" :links="path.links"
+            :bg-class="path.bgClass" :icon-color-class="path.iconColorClass" />
         </div>
       </div>
     </div>

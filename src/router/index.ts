@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MainLayout from '@/layout/MainLayout.vue'
 import LandingView from '@/views/LandingView.vue'
 import AboutView from '@/views/AboutView.vue'
+import CategoriesView from '@/views/CategoriesView.vue'
 // 1. define route
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
         path: '/about',
         name: 'about',
         component: AboutView,
+      },
+      {
+        path: '/categories',
+        name: 'categories',
+        component: CategoriesView,
       },
     ],
   },

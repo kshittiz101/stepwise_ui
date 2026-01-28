@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TestimonialCard from '@/components/common/TestimonialCard.vue'
+import TestimonialCard from '@/components/Cards/TestimonialCard.vue'
 
 type Testimonial = {
   id: number
@@ -61,13 +61,8 @@ const testimonials: Testimonial[] = [
       </div>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
         <div v-for="testimonial in testimonials" :key="testimonial.id">
-          <TestimonialCard
-            :quote="testimonial.quote"
-            :name="testimonial.name"
-            :title="testimonial.title"
-            :avatar="testimonial.avatar"
-            :alt="testimonial.alt"
-          />
+          <TestimonialCard :quote="testimonial.quote" :name="testimonial.name" :title="testimonial.title"
+            :avatar="testimonial.avatar" :alt="testimonial.alt" />
         </div>
       </div>
     </div>
