@@ -17,20 +17,20 @@
 
         <!-- home -->
 
-          <router-link to="/" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Home</router-link>
+          <router-link to="/" class="text-base font-semibold text-gray-300 hover:text-white transition-colors">Home</router-link>
 
         <!-- about -->
-        <router-link to="/about" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">About</router-link>
+        <router-link to="/about" class="text-base font-semibold text-gray-300 hover:text-white transition-colors">About</router-link>
 
         <!-- categories -->
-        <router-link to="/categories" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Categories</router-link>
+        <router-link to="/categories" class="text-base font-semibold text-gray-300 hover:text-white transition-colors">Categories</router-link>
       </nav>
 
       <!-- Auth Buttons (Right) -->
       <div class="flex items-center gap-4">
-        <button class="hidden text-sm font-semibold text-white md:block">Log in</button>
+        <button class="hidden text-base font-semibold text-white md:block">Log in</button>
         <button
-          class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90"
+          class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-base font-bold text-white transition-all hover:bg-primary/90"
         >
           Join Free
         </button>

@@ -26,7 +26,7 @@ import heroImg from '@/assets/hero-img.jpeg'
             <span class="relative inline-flex size-2 rounded-full bg-blue-500"></span>
           </span>
           <span class="text-xs font-bold uppercase tracking-wide text-blue-600"
-            >Trusted by 50,000+ Students</span
+            >#1 Platform for +2 NEB Students</span
           >
         </div>
 
@@ -34,14 +34,15 @@ import heroImg from '@/assets/hero-img.jpeg'
         <h1
           class="mb-6 text-balance text-5xl font-black leading-[1.1] tracking-tight text-secondary md:text-6xl lg:text-7xl dark:text-white"
         >
-          Transform Your Learning Goals Into
-          <span class="text-primary">Actionable Plans</span>
+          Ace Your +2 NEB Exams With
+          <span class="text-primary">Flying Colors</span>
         </h1>
 
         <!-- Subtext -->
         <p class="mb-10 max-w-2xl text-lg leading-relaxed text-gray-500 md:text-xl">
-          The all-in-one platform for Nepali students to crack competitive exams like Lok Sewa and
-          CEE, and master high-demand career skills.
+          Comprehensive study materials, past questions, and expert guidance for Science,
+          Management, and Humanities streams. Master Physics, Chemistry, Biology, Mathematics,
+          English, Nepali, and all compulsory subjects.
         </p>
 
         <!-- Buttons -->
@@ -49,7 +50,7 @@ import heroImg from '@/assets/hero-img.jpeg'
           <button
             class="group flex h-14 cursor-pointer items-center justify-center gap-2 rounded-xl bg-primary px-8 text-base font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5 hover:bg-blue-600 hover:shadow-blue-500/30"
           >
-            Start Free Today
+            Start +2 Preparation
             <span
               class="material-symbols-outlined text-xl transition-transform duration-300 group-hover:translate-x-1"
               >arrow_forward</span
@@ -58,7 +59,7 @@ import heroImg from '@/assets/hero-img.jpeg'
           <button
             class="flex h-14 cursor-pointer items-center justify-center rounded-xl border border-gray-200 bg-white px-8 text-base font-bold text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
           >
-            Browse Courses
+            View NEB Past Questions
           </button>
         </div>
       </div>
@@ -88,11 +89,11 @@ import heroImg from '@/assets/hero-img.jpeg'
             <div
               class="flex size-12 items-center justify-center rounded-full bg-green-100 text-green-600"
             >
-              <span class="material-symbols-outlined text-2xl">check_circle</span>
+              <span class="material-symbols-outlined text-2xl">school</span>
             </div>
             <div>
-              <p class="text-xs font-medium text-gray-500 dark:text-gray-400">Success Rate</p>
-              <p class="text-xl font-bold text-secondary dark:text-white">92% Exam Pass</p>
+              <p class="text-xs font-medium text-gray-500 dark:text-gray-400">+2 NEB Results</p>
+              <p class="text-xl font-bold text-secondary dark:text-white">95% A+ Grade</p>
             </div>
           </div>
         </div>

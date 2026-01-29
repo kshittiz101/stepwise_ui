@@ -21,11 +21,11 @@ const props = defineProps<LearnPathCardProps>()
       </span>
     </div>
     <h3 class="text-2xl font-black text-secondary">{{ props.title }}</h3>
-    <p class="text-sm leading-relaxed text-gray-600">
+    <p class="text-base leading-relaxed text-gray-600">
       {{ props.description }}
     </p>
     <a
-      class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors group-hover:gap-3"
+      class="inline-flex items-center gap-2 text-base font-semibold text-primary transition-colors group-hover:gap-3"
       :href="props.links"
     >
       Explore Program
